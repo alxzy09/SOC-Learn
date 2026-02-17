@@ -1,8 +1,4 @@
-Berikut adalah versi `README.md` yang sudah diperbaiki sehingga **Table of Contents mengarah langsung ke directory `Juicy-Details-THM`**, bukan hanya anchor di halaman yang sama.
 
-Anda bisa langsung gunakan ini di root repository.
-
----
 
 # SOC-Learn
 
