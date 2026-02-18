@@ -1,5 +1,3 @@
-
-
 # SOC-Learn
 
 SOC-Learn adalah repository pembelajaran yang berfokus pada pengembangan kemampuan **Security Operations Center (SOC)**. Repository ini berisi kumpulan materi, catatan praktik, dan pembahasan studi kasus yang disusun secara bertahap untuk membantu memahami workflow SOC secara sistematis.
@@ -27,6 +25,9 @@ SOC-Learn/
 ├── Juicy-Details-THM/
 │   └── README.md
 │
+├── Investigating-Windows-THM/
+│   └── README.md
+│
 └── README.md
 ```
 
@@ -35,6 +36,7 @@ SOC-Learn/
 ## Table of Contents
 
 1. [Juicy Details – TryHackMe](./Juicy-Details-THM)
+2. [Investigating Windows – TryHackMe](./Investigating-Windows-THM)
 
 ---
 
@@ -55,15 +57,24 @@ Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap dan catata
 
 ---
 
-## Roadmap (Akan Datang)
+## Investigating Windows – TryHackMe
 
-Materi selanjutnya akan mencakup topik seperti:
+Materi kedua dalam repository ini diambil dari room **Investigating Windows** di platform TryHackMe.
 
-* SIEM Fundamentals
-* Threat Intelligence
-* Incident Response Lifecycle
-* Malware Analysis Basics
-* Blue Team Lab Practice
+Directory: `Investigating-Windows-THM/`
+
+Status: **Completed** (18/02/2026)
+
+Materi ini membahas:
+
+* Windows Event Log Analysis (Security, System, Application)
+* Investigasi aktivitas autentikasi dan user (Event ID: 4624, 4625, 4672, 4720)
+* Deteksi mekanisme persistence (Registry, Scheduled Tasks, Startup Apps)
+* Analisis artefak jaringan (Hosts File, Firewall Rules)
+* Rekonstruksi timeline serangan dan ekstraksi IOC
+* Dokumentasi dan pelaporan insiden
+
+Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap dan catatan pembelajaran.
 
 ---
 
@@ -72,3 +83,5 @@ Materi selanjutnya akan mencakup topik seperti:
 Repository ini dibuat sebagai dokumentasi pembelajaran dan referensi untuk pengembangan skill SOC secara terstruktur.
 
 Struktur akan terus berkembang seiring penambahan materi baru.
+
+Last Updated: 18/02/2026
