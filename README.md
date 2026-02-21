@@ -37,6 +37,7 @@ SOC-Learn/
 
 1. [Juicy Details – TryHackMe](./Juicy-Details-THM)
 2. [Investigating Windows – TryHackMe](./Investigating-Windows-THM)
+3. [Memory Forensics - TryHackMe](./Memory-Forensics-THM/)
 
 ---
 
