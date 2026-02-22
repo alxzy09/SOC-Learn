@@ -82,9 +82,6 @@ Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap dan catata
 
 ---
 
-
----
-
 ## Memory Forensics – TryHackMe
 
 Materi ketiga dalam repository ini diambil dari room **Memory Forensics** di platform TryHackMe.
