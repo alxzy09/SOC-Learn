@@ -31,6 +31,12 @@ SOC-Learn/
 ├── Memory-Forensics-THM/
 │   └── README.md
 │
+├── Compiled-THM/
+│   └── README.md
+│
+├── Extracted-THM/
+│   └── README.md
+│
 └── README.md
 ```
 
@@ -42,6 +48,7 @@ SOC-Learn/
 2. [Investigating Windows – TryHackMe](./Investigating-Windows-THM)
 3. [Memory Forensics - TryHackMe](./Memory-Forensics-THM/)
 4. [Compiled – TryHackMe](./Compiled-THM/)
+5. [Extracted – TryHackMe](./Extracted-THM/)
 
 ---
 
@@ -130,6 +137,37 @@ Tantangan ini meminta peserta untuk menemukan password yang benar dari sebuah bi
 *   **Secret Flag:** `DoYouEven_init`
 
 Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap, catatan analisis Ghidra, dan langkah-langkah penyelesaian.
+
+---
+
+
+## Extracted – TryHackMe
+
+Materi kelima dalam repository ini diambil dari room **Extracted** di platform TryHackMe.
+
+**Directory:** `Extracted-THM/`
+
+**Status:** **Completed**
+
+Materi ini membahas:
+
+*   **Network Forensics (PCAP):** Analisis lalu lintas jaringan menggunakan **Wireshark** dan **tshark** untuk mengidentifikasi koneksi mencurigakan.
+*   **PowerShell Malware Analysis:** Membaca dan mendekode skrip PowerShell yang di-obfuscate untuk memahami payload malicious.
+*   **Data Exfiltration Techniques:** Memahami cara attacker mengirim data menggunakan **XOR Encryption** dan **Base64 Encoding** melalui port non-standar.
+*   **KeePass Vulnerability (CVE-2023-32784):** Eksploitasi kerentanan pada input password KeePass yang meninggalkan jejak di memori (RAM).
+*   **Memory Dump Analysis:** Menggunakan **keepass-dump-extractor** untuk merekonstruksi password dari process memory dump.
+*   **Password Cracking:** Teknik brute-force targeted menggunakan **John the Ripper** dengan wordlist yang digenerate dari artefak memori.
+
+**Ringkasan Challenge:**
+Tantangan ini mensimulasikan skenario dimana attacker berhasil mencuri memory dump dan database KeePass korban melalui jaringan. Peserta harus menganalisis PCAP untuk mengambil file yang di-exfiltrate, mendekode enkripsi XOR, memanfaatkan CVE pada KeePass untuk mendapatkan sebagian password, dan akhirnya membuka database untuk menemukan flag.
+
+**Proof of Concept (PoC):**
+*   **Alat Analisis:** `Wireshark`, `tshark`, `xortool`, `keepass-dump-extractor`, `john`.
+*   **Teknik Dekoding:** `Base64 Decode` -> `XOR Decrypt (Key 0x41/0x42)`.
+*   **Vulnerability:** CVE-2023-32784 (KeePass Password Remnants in Memory).
+*   **Flag Location:** Tersembunyi di dalam entry Notes pada database `Database1337.kdbx`.
+
+Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap, langkah-langkah decoding, dan analisis eksploitasi CVE.
 
 ---
 
