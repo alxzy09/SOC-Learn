@@ -100,26 +100,6 @@ Materi ini membahas:
 
 Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap dan catatan pembelajaran.
 
----
-
-## Memory Forensics – TryHackMe
-
-Materi ketiga dalam repository ini diambil dari room **Memory Forensics** di platform TryHackMe.
-
-**Directory:** `Memory-Forensics-THM/`
-
-Materi ini membahas:
-
-*   Dasar-dasar **Memory Forensics** dan konsep Volatile Memory (RAM)
-*   Penggunaan framework **Volatility** untuk analisis memory dump
-*   **Image Identification**: Menentukan profil OS yang tepat untuk interpretasi memori
-*   **Credential Dumping**: Ekstraksi password hash (LM/NTLM) dari memori
-*   **Timeline Analysis**: Rekonstruksi aktivitas sistem (Shutdown time, CMD History)
-*   **Key Recovery**: Analisis enkripsi dan pemulihan passphrase (TrueCrypt)
-*   Rekonstruksi kejadian insiden melalui sisa data di memori (Process Memory)
-
-Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap dan catatan pembelajaran.
-
 ## Catatan
 
 Repository ini dibuat sebagai dokumentasi pembelajaran dan referensi untuk pengembangan skill SOC secara terstruktur.
