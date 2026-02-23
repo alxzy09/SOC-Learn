@@ -41,6 +41,7 @@ SOC-Learn/
 1. [Juicy Details – TryHackMe](./Juicy-Details-THM)
 2. [Investigating Windows – TryHackMe](./Investigating-Windows-THM)
 3. [Memory Forensics - TryHackMe](./Memory-Forensics-THM/)
+4. [Compiled – TryHackMe](./Compiled-THM/)
 
 ---
 
@@ -100,10 +101,42 @@ Materi ini membahas:
 
 Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap dan catatan pembelajaran.
 
+---
+
+
+## Compiled – TryHackMe
+
+Materi keempat dalam repository ini diambil dari room **Compiled** di platform TryHackMe.
+
+**Directory:** `Compiled-THM/`
+
+**Status:** **Completed** (24/05/2024)
+
+Materi ini membahas:
+
+*   **Dasar Reverse Engineering:** Analisis binary tanpa source code asli.
+*   **Identifikasi File:** Menggunakan perintah `file` untuk mengenali format ELF (Linux Executable).
+*   **Static Analysis:** Ekstraksi string tersembunyi menggunakan `strings` untuk mencari petunjuk awal.
+*   **Decompilation:** Menggunakan **Ghidra** untuk mengubah machine code menjadi pseudocode C yang mudah dibaca.
+*   **Analisis Fungsi C:** Memahami logika `scanf` (Format String), `strcmp` (String Comparison), dan variabel stack (`local_28`).
+*   **Logic Exploitation:** Merekonstruksi input password berdasarkan pola format string (`DoYouEven%sCTF`).
+*   **Understanding Return Values:** Memahami bahwa `strcmp` mengembalikan `0` ketika string cocok.
+
+**Ringkasan Challenge:**
+Tantangan ini meminta peserta untuk menemukan password yang benar dari sebuah binary compiled. Melalui analisis dekompilasi, ditemukan bahwa program meminta input dengan pola tertentu dan membandingkan bagian tengah input dengan string rahasia `_init`.
+
+**Proof of Concept (PoC):**
+*   **Input Binary:** `DoYouEven_initCTF`
+*   **Secret Flag:** `DoYouEven_init`
+
+Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap, catatan analisis Ghidra, dan langkah-langkah penyelesaian.
+
+---
+
 ## Catatan
 
 Repository ini dibuat sebagai dokumentasi pembelajaran dan referensi untuk pengembangan skill SOC secara terstruktur.
 
 Struktur akan terus berkembang seiring penambahan materi baru.
 
-Last Updated: 18/02/2026
+Last Updated: 23/02/2026
