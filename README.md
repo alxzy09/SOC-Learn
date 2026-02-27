@@ -49,6 +49,7 @@ SOC-Learn/
 3. [Memory Forensics - TryHackMe](./Memory-Forensics-THM/)
 4. [Compiled – TryHackMe](./Compiled-THM/)
 5. [Extracted – TryHackMe](./Extracted-THM/)
+6. [Mayhem](./Mayhem-THM/)
 
 ---
 
@@ -168,6 +169,28 @@ Tantangan ini mensimulasikan skenario dimana attacker berhasil mencuri memory du
 *   **Flag Location:** Tersembunyi di dalam entry Notes pada database `Database1337.kdbx`.
 
 Silakan masuk ke directory tersebut untuk membaca dokumentasi lengkap, langkah-langkah decoding, dan analisis eksploitasi CVE.
+
+---
+
+### Mayhem – TryHackMe
+
+**Directory:** `Mayhem-THM/`
+
+Materi ini berasal dari room **Mayhem** di platform TryHackMe.
+
+Room ini merupakan sebuah *Capture The Flag (CTF)* dengan fokus pada **network forensics, malware traffic analysis, dan command-and-control (C2) traffic inspection**. Peserta akan diberikan file bukti berbentuk **PCAP** yang berisi aktivitas jaringan yang kompleks untuk dianalisis menggunakan tools seperti Wireshark dan alat dekripsi. 
+
+Materi ini membahas:
+
+* Analisis traffic jaringan dari file PCAP dengan Wireshark
+* Identifikasi dan ekstraksi file yang ditransfer melalui HTTP (*e.g.*, `install.ps1`, `notepad.exe`)
+* Interpretasi skrip PowerShell yang digunakan oleh penyerang
+* Deteksi dan klasifikasi payload *malicious* serta penelitian terhadap *Command-and-Control* (C2) framework seperti Havoc
+* Ekstraksi indikator kompromi (IoC) melalui lalu lintas jaringan
+* Teknik dekripsi komunikasi C2 untuk mendapatkan data rahasia
+* Rekonstruksi timeline aktivitas penyerang melalui informasi dalam PCAP
+
+Silakan masuk ke direktori tersebut untuk membaca dokumentasi lengkap dan catatan pembelajaran.
 
 ---
 
