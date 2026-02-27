@@ -37,6 +37,9 @@ SOC-Learn/
 ├── Extracted-THM/
 │   └── README.md
 │
+├── Mayhem-THM/
+│   └── README.md
+│
 └── README.md
 ```
 
