@@ -70,9 +70,9 @@ tshark -r traffic.pcapng -Y 'http.request.method == "POST"' -T fields -e media.t
 
 Namun, kita harus menghapus informasi header terlebih dahulu, atau hanya mempertimbangkan datanya saja. (Ditandai dengan warna putih pada gambar di atas). Dan kita lihat bahwa kita dapat menguraikan lalu lintas tersebut:
 
-```
-Paket-paket berikutnya setelah paket awal memiliki header tanpa kunci AES dan IV. Header ini hanya sepanjang 40 byte (untuk diidentifikasi oleh COMMAND_NOJOB). Dengan menghapus header ini terlebih dahulu, data selanjutnya dapat didekripsi dengan kunci dan IV yang sama.
-```
+
+>Paket-paket berikutnya setelah paket awal memiliki header tanpa kunci AES dan IV. Header ini hanya sepanjang 40 byte (untuk diidentifikasi oleh COMMAND_NOJOB). Dengan menghapus header ini terlebih dahulu, data selanjutnya dapat didekripsi dengan kunci dan IV yang sama.
+
 
 ![](https://0xb0b.gitbook.io/writeups/~gitbook/image?url=https%3A%2F%2F2148487935-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FoqaFccsCrwKo1CHmLRKW%252Fuploads%252FhvSvSoI7c2G8whNxZiMQ%252Fgrafik.png%3Falt%3Dmedia%26token%3Dca54783f-8752-4d57-9c51-a1f890c95dc9&width=768&dpr=2&quality=100&sign=a0c1c44c&sv=2)
 
